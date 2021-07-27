@@ -12,10 +12,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.amber,
-        accentColor: Colors.pink,
-        canvasColor: Color.fromRGBO(255, 254, 215, 1),
-      ),
+          primarySwatch: Colors.amber,
+          accentColor: Colors.pink,
+          fontFamily: 'Raleway',
+          canvasColor: Color.fromRGBO(255, 254, 215, 1),
+          appBarTheme: AppBarTheme(
+            textTheme: ThemeData.light().textTheme.copyWith(
+                headline6: TextStyle(fontFamily: 'Raleway', fontSize: 30)),
+          ),
+          textTheme: ThemeData.light().textTheme.copyWith(
+              headline6: TextStyle(
+                  fontFamily: 'RobotoCondensed',
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold))),
       home: CategoriesScreen(),
     );
   }

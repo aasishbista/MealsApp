@@ -9,7 +9,7 @@ const categoryDummyData = const [
   ),
   Category(
     id: 'c2',
-    title: 'Quick & Easy',
+    title: 'Quick and Easy',
     bgcolor: Colors.red,
   ),
   Category(
