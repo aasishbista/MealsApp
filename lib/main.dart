@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'catogery_meals_recipe_screen.dart';
+
 import 'categories_screen.dart';
 
 void main() {
@@ -26,6 +29,11 @@ class MyApp extends StatelessWidget {
                   fontSize: 25,
                   fontWeight: FontWeight.bold))),
       home: CategoriesScreen(),
+      routes: {
+        MealsRecipeScreen.recipeRoute: (_) {
+          return MealsRecipeScreen();
+        }
+      },
     );
   }
 }
